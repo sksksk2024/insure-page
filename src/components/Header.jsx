@@ -48,8 +48,8 @@ const Header = () => {
           } absolute lg:hidden`}
         >
           <ul
-            className={`translate-y-8 -translate-x-1/2 animate-fade absolute flex flex-col justify-start items-center gap-4 font-bold text-white text-lg w-[100dvw] h-[100dvh] p-32P bg-very-dark-violet background ${
-              isHidden && 'select-none'
+            className={`translate-y-8 -translate-x-1/2 animate-fade absolute flex flex-col justify-start items-center gap-4 font-bold text-white text-lg w-[100dvw] h-[92dvh] p-32P bg-very-dark-violet background ${
+              isHidden && 'select-none overflow-y-clip'
             }`}
           >
             <li className="relative cursor-pointer group">
@@ -112,7 +112,7 @@ const Header = () => {
               </button>
             </li>
             <li className="relative cursor-pointer group">
-              <button className="text-black uppercase hover:text-white hover:bg-black border-2 border-solid border-black px-16P py-8P text-white hover:text-black hover:border-black">
+              <button className="text-black uppercase hover:text-white hover:bg-black border-2 border-solid border-black px-16P py-8P text-black hover:text-black hover:border-black">
                 View Plans
               </button>
             </li>
