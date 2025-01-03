@@ -1,4 +1,3 @@
-<span style="color: red;">This text is red!</span>
 # Frontend Mentor - Insure landing page
 
 ![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
