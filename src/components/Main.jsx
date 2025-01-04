@@ -88,10 +88,10 @@ const Main = () => {
 
         <div className="flex flex-col lg:flex-row justify-center items-center gap-12 py-16P">
           <div className="flex flex-col justify-start items-center lg:items-start gap-4 text-grayish-blue text-center lg:text-start">
-            <img src={snappy} alt="Snappy Process" />
-            <h3 className="font-dm-serif-display text-xl text-black">
+            <img src={snappy} alt="Snappy Process Quality" />
+            <h2 className="font-dm-serif-display text-xl text-black">
               Snappy Process
-            </h3>
+            </h2>
             <p className="min-w-container-100 w-[90dvw] max-w-container-300">
               Our application process can be completed in minutes, not hours.
               Don’t get stuck filling in tedious forms.
@@ -99,10 +99,10 @@ const Main = () => {
           </div>
 
           <div className="flex flex-col justify-start items-center lg:items-start gap-4 text-grayish-blue text-center lg:text-start">
-            <img src={affordable} alt="Snappy Process" />
-            <h3 className="font-dm-serif-display text-xl text-black">
+            <img src={affordable} alt="Affordable Prices Quality" />
+            <h2 className="font-dm-serif-display text-xl text-black">
               Affordable Prices
-            </h3>
+            </h2>
             <p className="w-[90dvw] max-w-container-300">
               We don’t want you worrying about high monthly costs. Our prices
               may be low, but we still offer the best coverage possible.
@@ -110,10 +110,10 @@ const Main = () => {
           </div>
 
           <div className="flex flex-col justify-start items-center lg:items-start gap-4 text-grayish-blue text-center lg:text-start">
-            <img src={peopleFirst} alt="Snappy Process" />
-            <h3 className="font-dm-serif-display text-xl text-black">
+            <img src={peopleFirst} alt="People First Quality" />
+            <h2 className="font-dm-serif-display text-xl text-black">
               People First
-            </h3>
+            </h2>
             <p className="w-[90dvw] max-w-container-300">
               Our plans aren’t full of conditions and clauses to prevent
               payouts. We make sure you’re covered when you need it.

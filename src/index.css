@@ -40,6 +40,7 @@ img {
   --very-dark-violet: hsl(270, 9%, 17%);
   --dark-grayish-violet: hsl(273, 4%, 51%);
   --very-light-gray: hsl(0, 0%, 98%);
+  --icon: hsl(273, 4%, 51%);
 }
 /* Styles */
 html,
@@ -50,9 +51,13 @@ body {
 
 .background {
   background: url('./images/bg-pattern-mobile-nav.svg') center no-repeat;
-  background-position: 0dvw 42dvh;
+  background-position: 0dvw 43dvh;
   background-size: 100dvw 50dvh;
   background-color: var(--very-dark-violet);
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
 
 /* Loader */

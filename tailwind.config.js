@@ -2,7 +2,11 @@ const { default: daisyui } = require('daisyui');
 
 // tailwind.config.js
 module.exports = {
-  content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,svg}',
+    './src/**/*.svg',
+  ],
   daisyui: {
     themes: [
       {
@@ -113,19 +117,31 @@ module.exports = {
             opacity: '1',
           },
         },
+        fadeOut: {
+          '0%': {
+            opacity: '1',
+            zIndex: '50',
+          },
+          '100%': {
+            opacity: '0',
+            zIndex: '0',
+          },
+        },
       },
       animation: {
         comeIn: 'comeIn .5s forwards',
+        fadeOut: 'fadeOut .5s forwards',
         comeOut: 'comeOut 1s forwards',
         walk: 'walk 2s backwards',
-        bounce: 'bounce .6s forwards',
-        bounceCombo: 'bounceCombo 1.5s forwards',
+        bounce: 'bounce 3.6s forwards',
+        bounceCombo: 'bounceCombo 3.5s forwards',
       },
       colors: {
         'grayish-blue': 'var(--grayish-blue)',
         'very-dark-violet': 'var(--very-dark-violet)',
         'dark-grayish-violet': 'var(--dark-grayish-violet)',
         'very-light-gray': 'var(--very-light-gray)',
+        icon: 'var(--icon)',
         border: {
           'light-grayish-blue': 'var(--light-grayish-blue)',
           'grayish-blue': 'var(--grayish-blue)',

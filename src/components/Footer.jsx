@@ -1,8 +1,8 @@
 import logo from '../images/logo.svg';
-import facebook from '../images/icon-facebook.svg';
-import twitter from '../images/icon-twitter.svg';
-import pinterest from '../images/icon-pinterest.svg';
-import insta from '../images/icon-instagram.svg';
+import { FacebookIcon } from '../utils/Icons';
+import { TwitterIcon } from '../utils/Icons';
+import { PinterestIcon } from '../utils/Icons';
+import { InstaIcon } from '../utils/Icons';
 import img1 from '../images/bg-pattern-footer-mobile.svg';
 import img2 from '../images/bg-pattern-footer-desktop.svg';
 
@@ -25,10 +25,10 @@ const Footer = () => {
       <section className="z-10 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-8 w-full">
         <img src={logo} alt="insure" />
         <div className="flex justify-center items-center gap-3">
-          <img src={facebook} alt="facebook" />
-          <img src={twitter} alt="twitter" />
-          <img src={pinterest} alt="pinterest" />
-          <img src={insta} alt="instagram" />
+          <FacebookIcon />
+          <TwitterIcon />
+          <PinterestIcon />
+          <InstaIcon />
         </div>
       </section>
 
@@ -36,44 +36,86 @@ const Footer = () => {
 
       <section className="z-10 w-screen flex flex-col lg:flex-row justify-center lg:justify-around items-center lg:items-start gap-6">
         <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start gap-6">
-          <h4 className="text-dark-grayish-violet">Our company</h4>
+          <h3 className="text-dark-grayish-violet">Our company</h3>
 
           <ul className="text-black flex flex-col justify-center lg:justify-start items-center lg:items-start gap-2">
-            <li>How we work</li>
-            <li>Why Insure?</li>
-            <li>View plans</li>
-            <li>Reviews</li>
+            <li className="group relative cursor-pointer">
+              How we work
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="group relative cursor-pointer">
+              Why Insure?
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="group relative cursor-pointer">
+              View plans
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="group relative cursor-pointer">
+              Reviews
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
           </ul>
         </div>
 
         <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start gap-6">
-          <h4 className="text-dark-grayish-violet">Help me</h4>
+          <h3 className="text-dark-grayish-violet">Help me</h3>
 
           <ul className="text-black flex flex-col justify-center lg:justify-start items-center lg:items-start gap-2">
-            <li>FAQ</li>
-            <li>Terms of use</li>
-            <li>Privacy policy</li>
-            <li>Cookies</li>
+            <li className="group relative cursor-pointer">
+              FAQ
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="group relative cursor-pointer">
+              Terms of use
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="group relative cursor-pointer">
+              Privacy policy
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="group relative cursor-pointer">
+              Cookies
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
           </ul>
         </div>
 
         <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start gap-6">
-          <h4 className="text-dark-grayish-violet">Contact</h4>
+          <h3 className="text-dark-grayish-violet">Contact</h3>
 
           <ul className="text-black flex flex-col justify-center lg:justify-start items-center lg:items-start gap-2">
-            <li>Sales</li>
-            <li>Support</li>
-            <li>Live chat</li>
+            <li className="group relative cursor-pointer">
+              Sales
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="group relative cursor-pointer">
+              Support
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="group relative cursor-pointer">
+              Live chat
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
           </ul>
         </div>
 
         <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start gap-6">
-          <h4 className="text-dark-grayish-violet">Others</h4>
+          <h3 className="text-dark-grayish-violet">Others</h3>
 
           <ul className="text-black flex flex-col justify-center lg:justify-start items-center lg:items-start gap-2">
-            <li>Careers</li>
-            <li>Press</li>
-            <li>Licenses</li>
+            <li className="group relative cursor-pointer">
+              Careers
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="group relative cursor-pointer">
+              Press
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li className="group relative cursor-pointer">
+              Licenses
+              <span className="absolute left-0 bottom-0 w-0 h-2H bg-black group-hover:w-full transition-all duration-300"></span>
+            </li>
           </ul>
         </div>
       </section>

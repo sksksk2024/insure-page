@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import logo from '../images/logo.svg';
 import hamburger from '../images/icon-hamburger.svg';
 import close from '../images/icon-close.svg';
@@ -8,6 +8,20 @@ const Header = () => {
 
   // Toggle menu visibility
   const MenuStart = () => setIsHidden(!isHidden);
+
+  // Add or remove ".no-scroll" class on the body when the menu is open
+  useEffect(() => {
+    if (!isHidden) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+
+    // Cleanup to ensure no-scroll is removed on unmount
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, [isHidden]);
 
   return (
     <header>
@@ -44,12 +58,12 @@ const Header = () => {
         {/* Mobile Menu */}
         <div
           className={`${
-            isHidden ? 'animate-comeOut cursor-none' : 'z-50 animate-comeIn'
+            isHidden ? 'animate-fadeOut cursor-none' : 'z-50 animate-comeIn'
           } absolute lg:hidden`}
         >
           <ul
-            className={`translate-y-8 -translate-x-1/2 animate-fade absolute flex flex-col justify-start items-center gap-4 font-bold text-white text-lg w-[100dvw] h-[92dvh] p-32P bg-very-dark-violet background ${
-              isHidden && 'select-none overflow-y-clip'
+            className={`translate-y-8 -translate-x-1/2 animate-fade absolute flex flex-col justify-start items-center gap-4 font-bold text-white text-lg w-[100dvw] h-[100dvh] p-32P bg-very-dark-violet background ${
+              isHidden && 'select-none'
             }`}
           >
             <li className="relative cursor-pointer group">
@@ -57,7 +71,7 @@ const Header = () => {
                 disabled
                 className="cursor-pointer text-white hover:text-black"
               >
-                Product
+                How we work
               </button>
             </li>
             <li className="relative cursor-pointer group">
@@ -65,7 +79,7 @@ const Header = () => {
                 disabled
                 className="cursor-pointer text-white hover:text-black"
               >
-                Features
+                Blog
               </button>
             </li>
             <li className="relative cursor-pointer group">
@@ -73,7 +87,7 @@ const Header = () => {
                 disabled
                 className="cursor-pointer text-white hover:text-black"
               >
-                Pricing
+                Account
               </button>
             </li>
             <li className="relative cursor-pointer group">
@@ -92,7 +106,7 @@ const Header = () => {
                 disabled
                 className="cursor-pointer text-grayish-blue hover:text-black"
               >
-                Product
+                How we work
               </button>
             </li>
             <li className="relative cursor-pointer group">
@@ -100,7 +114,7 @@ const Header = () => {
                 disabled
                 className="cursor-pointer text-grayish-blue hover:text-black"
               >
-                Features
+                Blog
               </button>
             </li>
             <li className="relative cursor-pointer group">
@@ -108,7 +122,7 @@ const Header = () => {
                 disabled
                 className="cursor-pointer text-grayish-blue hover:text-black"
               >
-                Pricing
+                Account
               </button>
             </li>
             <li className="relative cursor-pointer group">
