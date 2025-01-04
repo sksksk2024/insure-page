@@ -132,6 +132,12 @@ module.exports = {
           'ticket-border-gradient': 'var(--ticket-gradient)',
         },
       },
+      translate: {
+        1.0625: '17rem',
+        // 1.375: '22rem',
+        // 1.25: '10rem',
+        1.375: '25rem',
+      },
       maxWidth: {
         'container-3xs': '12.5rem', // 200px
         'container-2xs': '15.625rem', // 250px
@@ -253,38 +259,41 @@ module.exports = {
         '1200MH': '75rem', // 1200px
       },
       height: {
-        '1.6H': '0.0625rem', // 1px
-        '2H': '0.125rem', // 2px
-        '8H': '0.3125rem', // 5px
-        '16H': '1rem', // 16px
-        '24H': '1.5rem', // 24px
-        '32H': '2rem', // 32px
-        '33.6H': '2.1rem', // 33.6px
-        '40H': '2.5rem', // 40px
-        '48H': '3rem', // 48px
-        '56H': '3.5rem', // 56px
-        '64H': '4rem', // 64px
-        '1-6H': '0.0625rem', // 1px
-        '24H': '1.5rem', // 24px
-        '28-8H': '1.8rem', // 28.8px
-        '73.6H': '4.6rem', // 73.6px
-        '80H': '5rem', // 80px
-        '90H': '6rem', // 90px
-        '100H': '6.25rem', // 100px
-        '128H': '8rem', // 128px
-        '144H': '9rem', // 144px
-        '160H': '10rem', // 160px
-        '200H': '12.5rem', // 200px
-        '208H': '13rem', // 208px
-        '256H': '16rem', // 256px
-        '272H': '17rem', // 272px
-        '288H': '18rem', // 288px
-        '300H': '18.75rem', // 300px
-        '316H': '19.75rem', // 316px
-        '400H': '25rem', // 400px
-        '464H': '29rem', // 464px
-        '564H': '35.25rem', // 564px
-        '800H': '50rem', // 800px
+        '1.6H': '0.0625rem',
+        '2H': '0.125rem',
+        '8H': '0.3125rem',
+        '16H': '1rem',
+        '24H': '1.5rem',
+        '32H': '2rem',
+        '33.6H': '2.1rem',
+        '40H': '2.5rem',
+        '48H': '3rem',
+        '56H': '3.5rem',
+        '64H': '4rem',
+        '1-6H': '0.0625rem',
+        '24H': '1.5rem',
+        '28-8H': '1.8rem',
+        '73.6H': '4.6rem',
+        '80H': '5rem',
+        '96H': '6rem',
+        '100H': '6.25rem',
+        '112H': '7rem',
+        '128H': '8rem',
+        '144H': '9rem',
+        '160H': '10rem',
+        '200H': '12.5rem',
+        '208H': '13rem',
+        '256H': '16rem',
+        '272H': '17rem',
+        '288H': '18rem',
+        '300H': '18.75rem',
+        '316H': '19.75rem',
+        '400H': '25rem',
+        '464H': '29rem',
+        '500H': '31.25rem',
+        '564H': '35.25rem',
+        '600H': '37.5rem',
+        '800H': '50rem',
       },
       screens: {
         '3xs': '0px',
@@ -376,6 +385,10 @@ module.exports = {
         '256I': '16rem',
         '280I': '17.5rem',
         '300I': '18.75rem',
+        '304I': '19rem',
+        '320I': '20rem',
+        '352I': '22rem',
+        '400I': '25rem',
       },
       backgroundImage: {
         'custom-gradient':
@@ -400,6 +413,8 @@ module.exports = {
         '56P': '3.5rem',
         '64P': '4rem',
         '80P': '5rem',
+        '96P': '6rem',
+        '112P': '7rem',
         '128P': '8rem',
       },
       borderRadius: {
