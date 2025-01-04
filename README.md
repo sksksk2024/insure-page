@@ -1,5 +1,14 @@
 # Frontend Mentor - Insure landing page
 
+**What are you most proud of, and what would you do differently next time?**
+The accomplishments I’m most proud of are:
+
+ -  I’ve started to enjoy creating website layouts more and no longer find it boring.
+ -  I now have a better understanding of positioning images effectively, whether it's aligning them to the right, left, or specific corners of a layout.
+ -   I've learned to use Lighthouse to identify a website's weaknesses. For instance, in my case, I already knew the issue: images without fixed width and height. While I prefer this approach, it’s a valuable tool to check a site’s speed and performance!
+    I’ve come to terms with the fact that I can’t avoid `useEffect` as easily as I’d like. In this case, though, it proved incredibly useful, and now I feel much more confident using it.
+ -   I’ve overcome the frustration of not being able to stick images to the edges. It turned out the issue was dynamic width and height causing inconsistent positioning—an insight that has greatly improved my layouts.
+
 ![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
